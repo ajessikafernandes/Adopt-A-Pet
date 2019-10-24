@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+.nav-menu{
+	float: center;
+	width: 70%;
+	left: 12%;
+	padding-top: 5px;
+	position: absolute;
+}
+
+.logo{
+	width: 45px;
+	text-align: center;
+	float: left;
+}
+
+.login-user {
+	float: right;
+}
+
+.jumbotron-with-background {
+    background-image: url(../img/index_main.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding-top: 0px;
+}
+
+.display-title {
+	font-family: Bangers;
+	padding-top: 10%;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+.lead, h5, p, li, a {
+	font-family: Oswald;
+	font-family: 50px;
+}
+
+.btn-info {
+	font-size: 15px;
+}
+
+.card-title{
+	font-family: Oswald;
+	font-size:30px;
+	padding: 15px;
+	text-align: center;
+}
+
+.title-modal {
+	font-family: Oswald;
+	font-size:30px;
+}
+
+.mb-4 {
+	font-family: Oswald;
+	font-size: 15px;
+	text-align: left;
+	padding: 5px;
+}
+
+.register {
+	padding-bottom: 50px;
+}
+
+.pet-card {
+	padding: 5px;
+	display: inline-grid;
+}
+
+
+.adopt-title{
+		font-family: Bangers;
+		padding-top: 20px;
+		padding-bottom: 10px;
+}
+
+.footer{
+	padding-top: 20px;
+	background-color: #a0cce9;
+}
+
+.container{
+	padding: 20px;
+}
+
+
+
+
+
