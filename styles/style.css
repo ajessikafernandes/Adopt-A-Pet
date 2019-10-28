@@ -4,16 +4,16 @@
 
 .h5,
 p,
+ul,
 li,
 a {
     font-family: Nunito;
     font-family: 50px;
+    text-decoration: none;
+    color: #535B5B;
 }
 
-
 /*Page: Index @JessikaFernandes*/
-
-
 /*Menu*/
 
 .nav-menu {
@@ -26,6 +26,11 @@ a {
 .logo {
     float: left;
     width: 10%;
+}
+
+.title-modal {
+    font-family: Nunito;
+    font-size: 30px;
 }
 
 .login-user {
@@ -80,63 +85,84 @@ a {
     border: #fff;
 }
 
-.card {
-    background-color: #fff;
-    /* definimos o quão arredondado irá ficar nosso box */
+
+/*Estilo card pet*/
+
+.card{
+    border: 1px solid;
+    border-color: #dcdcdc;
     border-radius: 10px;
-    box-shadow: 5px 7px 9px 1px rgb(158, 158, 158);
+}
+
+.card:hover {
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);
+    box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);
+    transition: 0.1s; 
+}
+
+.card-title{
+    text-decoration: none;
+    color: #000;
+    text-align: left;
+}
+
+.card-body{
+    padding: 10px;
+    text-decoration: none;
+    color: #535B5B; 
+}
+
+.card-icon{
+    border-radius: 50%;
+    color: #dcdcdc;
+    border: 1px solid; 
+    padding: 5px;
+    border-radius: 50%; 
 }
 
 .card-img-top {
-    border-radius: 10px;
+    border-radius: 10px 10px 2px 2px;
+    padding: 0;
 }
 
+/*Fim estilo card pet*/
 
-/* .card-box {
-    padding: 10px;
-} */
 
-.card-title {
-    font-family: Nunito;
-    font-size: 20px;
-    padding: 15px;
-}
+.donate-pet{
+    height: 200px;
 
-.title-modal {
-    font-family: Nunito;
-    font-size: 30px;
-}
-
-.mb-4 {
-    font-family: Nunito;
-    font-size: 15px;
-    text-align: left;
-    padding: 5px;
 }
 
 .register {
     padding-bottom: 50px;
 }
 
-.pet-card {
-    padding: 5px;
-    display: inline-grid;
-}
+/*Page: Index @JessikaFernandes*/
 
-.adopt-title {
-    font-family: Nunito;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
+
+
+
 
 .footer {
     padding-top: 20px;
-    background-color: #a0cce9;
+    background-color: #F3F0F0;
+    text-decoration: none;
 }
 
-.container {
-    padding: 20px;
-}
+
+
+
+/*.mb-4 {
+    font-family: Nunito;
+    font-size: 15px;
+    text-align: left;
+    padding: 5px;
+}*/
+
+
 
 .btn-file {
     position: relative;
@@ -162,12 +188,4 @@ a {
 #img-upload {
     width: 50%;
     float: center;
-}
-
-.jumbotron-with-background1 {
-    background-color: #fff;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 0px;
 }

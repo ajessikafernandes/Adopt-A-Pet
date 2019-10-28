@@ -16,7 +16,7 @@
     <!--Icons Font Aewsome-->
     <script src="https://kit.fontawesome.com/2987d54801.js" crossorigin="anonymous"></script>
     <!--Title page-->
-    <title> Home | Adopt a Pet </title>
+    <title> Home | AdoptPet </title>
 </head>
 
 <body>
@@ -28,7 +28,6 @@
                 <a class="login-user" data-toggle="modal" data-target="#modalRegisterFormUserDonate">
                     <i class="fas fa-user-circle"></i> Login
                 </a>
-
                 <!-- Modal Resgister User Donate-->
                 <div class="modal fade" id="modalRegisterFormUserDonate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -37,7 +36,7 @@
                                 <div>
                                     <a href="index.html"><img class="logo" src="img/favicon.png"></a>
                                 </div>
-                                <h4 class="modal-title w-100 title-modal">
+                                <h4 class="modal-title w-100 title-modal title-center">
                                     Acesse a sua conta
                                 </h4>
                             </div>
@@ -56,8 +55,9 @@
                                         <input type="password" class="form-control" placeholder="********">
                                     </div>
                                 </form>
+                                <br>
                                 <div class="text-center">
-                                    <p> Não tem uma conta? <a>Cadastre-se</a> </p>
+                                    <p> Não tem uma conta? <a href="register-user.html" style="color: #460fcd;">Cadastre-se</a> </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-light" data-dismiss="modal">Fechar</button>
@@ -76,123 +76,104 @@
                     <div class="col-sm-6 ">
                     </div>
                     <div class="col-sm-6 ">
-                        <h3 class="display-title "> Adote nossos amiguinhos de quatro patas</h3>
+                        <h3 class="display-title"> Adote nossos amiguinhos de quatro patas</h3>
                     </div>
                 </div>
                 <div class="row ">
                     <div class="col-sm-6 ">
                     </div>
                     <div class="col-sm-6 div-button-info-banner">
-                        <a href="adote-um-pet.html " class="btn btn-info-banner " role="button " aria-pressed="true "> + Amigos </a>
+                        <a href="adote-um-pet.html" class="btn btn-info-banner" role="button " aria-pressed="true "> + Amigos </a>
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <div class="container ">
+        <div class="container">
             <h2 class="adopt-title text-center ">Encontre o seu mais novo amigo</h2>
             <br>
             <div class="row ">
-                <div class="col-sm-4 card-box">
-                    <div class="card " style="width:350px ">
-                        <img class="card-img-top " src="img/doguinho1.jpg " alt="the image alt text here " style="width:100% ">
-                        <div class="card-body text-center ">
-                            <h7 class="card-title ">{{NomePet}}</h7>
-                            <p class="card-text text-left ">{{Type}}</p>
-                            <p class="card-text text-left ">{{Age}}</p>
-                            <p class="card-text text-left ">{{Gender}}</p>
-                            <p class="card-text text-left ">{{Address}}</p>
-                            <a href="# " class="btn btn-info ">Adote</a>
+                <a href="adote-um-pet.html">
+                <div class="col-sm-4">
+                    <div class="card" style="width:350px" href="#">
+                        <img class="card-img-top " src="img/doguinho1.jpg " style="width:100% ">
+                        <div class="card-body">
+                            <p></p>
+                            <div class="row">
+                                <div class="col-sm-6 ">                            
+                                    <h7 class="card-title">{{NomePet}}
+                                    <br>{{City}}, {{UF}}</h7>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <img class="card-icon" src="img/cao-icon.png"/>
+                                </div>            
+                            </div>
+                            <p class="card-text">{{Age}}</p>
+                            <p> P M G</p>
                         </div>
                     </div>
                 </div>
+                </a>
+                <a href="adote-um-pet.html">
                 <div class="col-sm-4">
                     <div class="card " style="width:350px ">
-                        <img class="card-img-top " src="img/gatinho1.jpg " alt="the image alt text here " style="width:100% ">
-                        <div class="card-body text-center ">
-                            <h7 class="card-title ">{{NomePet}}</h7>
-                            <p class="card-text text-left ">{{Type}}</p>
-                            <p class="card-text text-left ">{{Age}}</p>
-                            <p class="card-text text-left ">{{Gender}}</p>
-                            <p class="card-text text-left ">{{Address}}</p>
-                            <a href="# " class="btn btn-info ">Adote</a>
+                        <img class="card-img-top " src="img/gatinho1.jpg " style="width:100% ">
+                        <div class="card-body">
+                            <p></p>
+                            <div class="row">
+                                <div class="col-sm-6 ">                            
+                                    <h7 class="card-title">{{NomePet}}
+                                    <br>{{City}}, {{UF}}</h7>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <img class="card-icon" src="img/gato-icon.png"/>
+                                </div>            
+                            </div>
+                            <p class="card-text">{{Age}}</p>
+                            <p> P M G</p>
                         </div>
                     </div>
                 </div>
+                </a>
+                <a href="adote-um-pet.html">
                 <div class="col-sm-4 ">
                     <div class="card " style="width:350px ">
-                        <img class="card-img-top " src="img/doguinho2.jpg " alt="the image alt text here " style="width:100% ">
-                        <div class="card-body text-center ">
-                            <h7 class="card-title ">{{NomePet}}</h7>
-                            <p class="card-text text-left ">{{Type}}</p>
-                            <p class="card-text text-left ">{{Age}}</p>
-                            <p class="card-text text-left ">{{Gender}}</p>
-                            <p class="card-text text-left ">{{Address}}</p>
-                            <a href="# " class="btn btn-info ">Adote</a>
+                        <img class="card-img-top " src="img/doguinho2.jpg " style="width:100% ">
+                        <div class="card-body">
+                            <p></p>
+                            <div class="row">
+                                <div class="col-sm-6 ">                            
+                                    <h7 class="card-title">{{NomePet}}
+                                    <br>{{City}}, {{UF}}</h7>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <img class="card-icon" src="img/cao-icon.png"/>
+                                </div>            
+                            </div>
+                            <p class="card-text">{{Age}}</p>
+                            <p> P M G</p>
                         </div>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
         <br>
         <div class="row text-center ">
             <a href="adote-um-pet.html " class="btn btn-info-banner " role="button " aria-pressed="true "> + Amigos </a>
         </div>
-
-        <!--Register User-->
-        <div class="row text-center">
-            <h2 class="card-title text-center">
+        <hr>
+        <!--Register Donate-->
+        <div class="container text-center donate-pet">
+            <br>
+            <h2>
                 Ajude-nos a salvar vidas, doe um pet !
             </h2>
-            <p class="card-text ">
-                Ajudamos animais de estimação domésticos a serem encontrados e adotados por familias cheias de amor.
-            </p>
-            <a href="doe-um-pet.html " class="btn btn-info " role="button " aria-pressed="true ">Doe</a>
+            <h5>
+                Acreditamos que todo animal de rua merece um lar, e que todo animal de canil merece uma nova chance de ser feliz
+            </h5>
+            <a href="register-user.html " class="btn btn-info-banner" role="button " aria-pressed="true ">Doe</a>
         </div>
-
-        <!-- 
-<div class="container ">
-  <h2 class="adopt-title ">Pets Adotados</h2>  
-  <div id="myCarousel " class="carousel slide " data-ride="carousel ">
-	 Indicators -->
-        <!--   <ol class="carousel-indicators ">
-      <li data-target="#myCarousel " data-slide-to="0 " class="active "></li>
-      <li data-target="#myCarousel " data-slide-to="1 "></li>
-      <li data-target="#myCarousel " data-slide-to="2 "></li>
-    </ol> -->
-
-        <!-- Wrapper for slides -->
-        <!--  <div class="carousel-inner ">
-      <div class="item active "  align="center ">
-        <img class="text-center " src="img/marmaduque.jpg " alt="Los Angeles " style="width:50%; height: 50%; vertical-align: middle; ">
-      </div>
-
-      <div class="item " align="center ">
-        <img src="img/marmaduque2.jpg " alt="Chicago " style="width:50%; height: 50%; ">
-      </div>
-    
-      <div class="item " align="center ">
-        <img src="img/marmaduque3.jpg " alt="New york " style="width:50%; height: 50%; ">
-      </div>
-    </div> -->
-
-        <!-- Left and right controls -->
-        <!--  <a class="left carousel-control " href="#myCarousel " data-slide="prev ">
-      <span class="glyphicon glyphicon-chevron-left "></span>
-      <span class="sr-only ">Previous</span>
-    </a>
-    <a class="right carousel-control " href="#myCarousel " data-slide="next ">
-      <span class="glyphicon glyphicon-chevron-right "></span>
-      <span class="sr-only ">Next</span>
-    </a>
-  </div>
-</div> -->
-
-
-
-
-
         <!-- Footer -->
         <section id="footer " class="footer ">
             <div class="container ">
@@ -211,7 +192,7 @@
                                 <li class="list-inline-item "><a href="mailto:jessika.alves.fernandes@outlook.com " target="_blank "><i class="fa fa-envelope "></i></a></li>
                             </ul>
                         </div>
-                        <h5 class="text-left ">Sobre nós</h5>
+                        <h4 class="text-left ">Sobre nós</h4>
                         <p class="text-left ">Nossa missão e paixão é ajudar a levar animais de estimação dos abrigos para lares amorosos para que possam ter uma nova vida cheia de carinho e felicidade. </p>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 ">
@@ -236,7 +217,8 @@
                 </div>
                 <div class="row ">
                     <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white ">
-                        <p class="h6 ">&copy 2019 Adopt-a-pet.com - All rights reserved to Animals.<a class="text-white ml-2 " href="https://github.com/ajessikafernandes " target="_blank "> Jéssika Fernandes </a></p>
+                        <p class="h6 ">&copy 2019 Adopt-a-pet.com - All rights reserved to Animals.<br>
+                        Made with <span class="glyphicon glyphicon-heart"><a class="text-white ml-2 " href="https://github.com/ajessikafernandes " target="_blank "> Jéssika Fernandes </a></p>
                     </div>
                     </hr>
                 </div>
