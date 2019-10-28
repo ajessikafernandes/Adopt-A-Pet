@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Icon -->
+	<link rel="icon" href="img/favicon.png" />
+	<!-- Code -->
+	<meta charset="utf-8">
+	<!-- Scale -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Style CSS-->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+	<!--Icons Font Aewsome-->
+	<script src="https://kit.fontawesome.com/2987d54801.js" crossorigin="anonymous"></script>
+	<!--Title page-->
+	<title>Doe um Pet | Adopt a Pet</title>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar nav-menu">
+	  	<div>
+	  		<a href="index.html">
+	  			<img class="logo" src="img/favicon.png" >
+	  		</a>
+		</div>
+	</nav>
+
+
+
+	<div class="container">
+		<br>
+  		<h1 class="adopt-title">
+  			Processo de doação de Pet
+  		</h1>
+  		<p>
+  			Depois de configurar uma conta, você poderá postar seu animal de estimação e gerenciar consultas e aplicativos de possíveis adotantes. 
+  			Não se preocupe. Seu nome, email e número de telefone nunca serão mostrados ao público.
+  		</p>
+
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#passo1"><h3>Sobre você</h3></a></li>
+		    <li><a data-toggle="tab" href="#passo2"><h3>Sobre seu Pet</h3></a></li>
+		    <li><a data-toggle="tab" href="#passo3"><h3>Localização</h3></a></li>
+		    <li><a data-toggle="tab" href="#passo4"><h3>Confirme</h3></a></li>
+		</ul>
+
+	  <div class="tab-content">
+	    <div id="passo1" class="tab-pane fade in active">
+	      	<br>
+	      	<h3>Informações de login</h3>
+	      	<div class="container">
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Email *</h4></div>
+					<div class="col-sm-4 text-left"><input type="email" class="form-control" placeholder="name@exemple.com" maxlength="50"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Senha *</h4></div>
+					<div class="col-sm-4 text-left"><input type="password" class="form-control" placeholder="********" maxlength="15"></div>
+				</div>
+			</div>
+			<hr>
+			<h3>Informações Pessoais</h3>
+	      	<div class="container">
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Nome *</h4></div>
+					<div class="col-sm-4 text-left"><input type="name" class="form-control" placeholder="First Name" maxlength="30"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Sobrenome *</h4></div>
+					<div class="col-sm-4 text-left"><input type="name" class="form-control" placeholder="Last Name" maxlength="40"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Telefone *</h4></div>
+					<div class="col-sm-4 text-left"><input type="text" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000" maxlength="11"></div>
+				</div>
+			</div>
+			<hr>
+			<h3>Onde podemos encontrá-lo?</h3>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>CEP</h4></div>
+					<div class="col-sm-4 text-left"><input type="text" class="form-control" placeholder="Ex.: 00000-000" cep-mask="00000-000" maxlength="8"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Cidade</h4></div>
+					<div class="col-sm-4 text-left"><input type="text" class="form-control" placeholder="Cidade" maxlength="40"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Estado</h4></div>
+					<div class="col-sm-4 text-left"><input type="text" class="form-control" placeholder="UF" maxlength="2"></div>
+				</div>
+			</div>
+			<hr>
+	      	<div class="container text-left">
+	      		<div class="row">
+	      			<input class="input_box" name="checkbox" type="checkbox" value="idade">
+          			Sou maior de 18 anos. * 
+	      		</div>
+	      		<div class="row">
+	      			<input class="input_box" name="checkbox" type="checkbox" value="termo">
+          			Eu li, entendi e concordo com os <a class="text-white ml-2" href="#index" target="_blank">TERMOS E CONDIÇÕES</a>. *
+	      		</div>  	
+			</div>
+			<br>
+			<div class="container text-left">
+				<button class="btn btn-info next">Próximo &rarr;</button>
+			</div>	      	
+	    </div>
+
+
+
+
+
+
+
+
+
+	    <div id="passo2" class="tab-pane fade">
+	      <h3>Perfil do Pet</h3>
+	      	<div class="container">
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Nome *</h4></div>
+					<div class="col-sm-4 text-left"><input type="name" class="form-control" placeholder="Nome Pet" maxlength="30"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Possui raça? Se sim, qual ?</h4></div>
+					<div class="col-sm-4 text-left"><input type="name" class="form-control" placeholder="Nome Raça" maxlength="30"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Carregue uma foto</h4></div>
+					<div class="col-sm-4 text-left">
+						<div class="input-group">
+				            <span class="input-group-btn">
+				                <span class="btn btn-default btn-file">
+				                    Selecione o arquivo <input type="file" id="imgInp">
+				                </span>
+				            </span>
+            				<input type="text" class="form-control" readonly>
+        				</div>
+        				<img id='img-upload'/>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm-4 control-label" for="radios">
+						<h4>Sexo</h4>
+					</div>
+				  	<div class="col-sm-4"> 
+				    	<label required="" class="radio-inline" for="radios-0" >
+				      		<input name="sexo" id="sexo" value="feminino" type="radio" required>
+				      		Feminino
+				   		</label> 
+				   		<label class="radio-inline" for="radios-1">
+				      		<input name="sexo" id="sexo" value="masculino" type="radio">
+				      		Masculino
+				    	</label>
+				  	</div>
+				</div>
+			</div>
+			<hr>
+			<h3>Informações Importantes</h3>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 control-label" for="radios">
+						<h4>Está Vacinado ?</h4>
+					</div>
+				  	<div class="col-sm-4"> 
+				    	<label required="" class="radio-inline" for="radios-0" >
+				      		<input name="vacinado" id="vacinado" value="S" type="radio" required>
+				      		Sim
+				   		</label> 
+				   		<label class="radio-inline" for="radios-1">
+				      		<input name="vacinado" id="vacinado" value="N" type="radio">
+				      		Não
+				    	</label>
+				    	<label class="radio-inline" for="radios-1">
+				      		<input name="vacinado" id="vacinado" value="U" type="radio">
+				      		Não Sei
+				    	</label>
+				  	</div>
+				</div>
+				<div class="row">
+				  	<div class="col-sm-4 control-label" for="radios">
+						<h4>Possui Microchip ?</h4>
+					</div>
+				  	<div class="col-sm-4"> 
+				    	<label required="" class="radio-inline" for="radios-0" >
+				      		<input name="microchip" id="microchip" value="S" type="radio" required>
+				      		Sim
+				   		</label> 
+				   		<label class="radio-inline" for="radios-1">
+				      		<input name="microchip" id="microchip" value="N" type="radio">
+				      		Não
+				    	</label>
+				    	<label class="radio-inline" for="radios-1">
+				      		<input name="microchip" id="microchip" value="U" type="radio">
+				      		Não Sei
+				    	</label>
+				  	</div>
+				</div>
+				<div class="row">
+				  	<div class="col-sm-4 control-label" for="radios">
+						<h4>Domesticado ?</h4>
+					</div>
+				  	<div class="col-sm-4"> 
+				    	<label required="" class="radio-inline" for="radios-0" >
+				      		<input name="domesticado" id="domesticado" value="S" type="radio" required>
+				      		Sim
+				   		</label> 
+				   		<label class="radio-inline" for="radios-1">
+				      		<input name="domesticado" id="domesticado" value="N" type="radio">
+				      		Não
+				    	</label>
+				    	<label class="radio-inline" for="radios-1">
+				      		<input name="domesticado" id="domesticado" value="U" type="radio">
+				      		Não Sei
+				    	</label>
+				  	</div>
+				</div>
+				<div class="row">
+				  	<div class="col-sm-4 control-label" for="radios">
+						<h4>Socializavel com outros animais ?</h4>
+					</div>
+				  	<div class="col-sm-4"> 
+				    	<label required="" class="radio-inline" for="radios-0" >
+				      		<input name="socializavel" id="socializavel" value="S" type="radio" required>
+				      		Sim
+				   		</label> 
+				   		<label class="radio-inline" for="radios-1">
+				      		<input name="socializavel" id="socializavel" value="N" type="radio">
+				      		Não
+				    	</label>
+				    	<label class="radio-inline" for="radios-1">
+				      		<input name="socializavel" id="socializavel" value="U" type="radio">
+				      		Não Sei
+				    	</label>
+				  	</div>
+				</div>
+				<div class="row">
+				  	<div class="col-sm-4 control-label" for="radios">
+						<h4>Tem necessidades especiais ?</h4>
+					</div>
+				  	<div class="col-sm-4"> 
+				    	<label required="" class="radio-inline" for="radios-0" >
+				      		<input name="especiais" id="especiais" value="S" type="radio" required>
+				      		Sim
+				   		</label> 
+				   		<label class="radio-inline" for="radios-1">
+				      		<input name="especiais" id="especiais" value="N" type="radio">
+				      		Não
+				    	</label>
+				    	<label class="radio-inline" for="radios-1">
+				      		<input name="especiais" id="especiais" value="U" type="radio">
+				      		Não Sei
+				    	</label>
+				  	</div>
+				</div>
+				<div class="row">
+				  	<div class="col-sm-4 control-label" for="radios">
+						<h4>Precisa de um adotador experiente</h4>
+					</div>
+				  	<div class="col-sm-4"> 
+				    	<label required="" class="radio-inline" for="radios-0" >
+				      		<input name="experiente" id="experiente" value="sim" type="radio" required>
+				      		Sim
+				   		</label> 
+				   		<label class="radio-inline" for="radios-1">
+				      		<input name="experiente" id="experiente" value="nao" type="radio">
+				      		Não
+				    	</label>
+				  	</div>
+				</div>
+			</div>
+		<hr>
+		<div>
+			<h3>História do Pet</h3>
+			<div class="container">
+				<div class="row">
+					<h4>Por favor, nos conte uma história !</h4>
+					<div class="form-group">
+					    <h5 for="exampleFormControlTextarea1">Onde você adquiriu seu animal de estimação? Qual a idade dele? O que você procura em um novo lar? 
+					    Que adjetivos você usaria para descrever seu animal de estimação?</h5>
+    					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div>
+			<h3>Dieta do Pet</h3>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Qual ração ele está ingerindo ?</h4></div>
+					<div class="col-sm-4 text-left"><input type="name" class="form-control" placeholder="Nome ração" maxlength="30"></div>
+				</div>
+			</div>
+		</div>
+	   	<div class="container text-left">
+			<button class="btn btn-default previous">&larr; Anterior</button>
+          	<button class="btn btn-info next">Próximo &rarr;</button>      	
+		</div>
+	</div>
+
+	    <!-- <div id="passo3" class="tab-pane fade">
+	    	<h3>Onde podemos encontrá-lo?</h3>
+	      	<div class="container">
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>CEP</h4></div>
+					<div class="col-sm-4 text-left"><input type="text" class="form-control" placeholder="Ex.: 00000-000" cep-mask="00000-000" maxlength="8"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Cidade</h4></div>
+					<div class="col-sm-4 text-left"><input type="text" class="form-control" placeholder="Cidade" maxlength="40"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-left"><h4>Estado</h4></div>
+					<div class="col-sm-4 text-left"><input type="text" class="form-control" placeholder="UF" maxlength="2"></div>
+				</div>
+			</div>
+			<hr>
+	      	<div class="container text-left">
+				<button class="btn btn-default previous">&larr; Anterior</button>
+          		<button class="btn btn-info next">Próximo &rarr;</button>	      	
+			</div>
+		</div> -->
+
+
+
+
+
+
+
+
+
+
+	    <div id="passo4" class="tab-pane fade">
+	      <h3>Você confirma as informações abaixo</h3>
+	      <p>Relação dos dados </p>
+	      <p>confirma publicação publica</p>
+	      <hr>
+	      	<div class="container text-left">
+				<button class="btn btn-default previous">&larr; Anterior</button>
+          		<button class="btn btn-success">Salvar</button>	      	
+			</div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+<!-- Footer -->
+	<section id="footer" class="footer">
+		<div class="container">
+			<div class="row ">
+				<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					
+				</div>
+				</hr>
+			</div>	
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="row ">
+						<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.facebook.com/ajessikafernandes"><i class="fab fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/ajessikafernandes"><i class="fab fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="mailto:jessika.alves.fernandes@outlook.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+					</div>
+					<h5 class="text-left">Sobre nós</h5>
+					<p class="text-left">Nossa missão e paixão é ajudar a levar animais de estimação dos abrigos para lares amorosos para que possam ter uma nova vida cheia de carinho e felicidade. </p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<h5 class="text-center">Links importantes</h5>
+					<ul class="list-unstyled quick-links text-center">
+						<li><a href="#"></i>Home</a></li>
+						<li><a href=""></i>Sobre</a></li>
+						<li><a href=""></i>Registre-se</a></li>
+						<li><a href=""></i>Adote</a></li>
+						<li><a href=""></i>Doe</a></li>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p class="h6">&copy 2019 Adopt-a-pet.com - All rights reserved to Animals.<a class="text-white ml-2" href="https://github.com/ajessikafernandes " target="_blank"> Jéssika Fernandes </a></p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
+
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+    /*disable non active tabs*/
+    $('.nav li').not('.active').addClass('disabled');
+    $('.nav li').not('.active').find('a').removeAttr("data-toggle");
+    
+    $('button.next').click(function(){
+        $lia = $('.nav li.active');
+        $li = $('.nav li.active').next('li');
+        
+        /*enable next tab*/
+        $li.removeClass('disabled');
+        $li.find('a').attr("data-toggle","tab");
+        /*toggle tab*/
+        $li.find('a').click();
+        
+        /*disable previous tab*/
+        $lia.addClass('disabled');
+        $lia.find('a').removeAttr("data-toggle");
+    });
+    $('button.previous').click(function(){
+        $lia = $('.nav li.active');
+        $li = $('.nav li.active').prev('li');
+        
+        /*enable next tab*/
+        $li.removeClass('disabled');
+        $li.find('a').attr("data-toggle","tab");
+        /*toggle tab*/
+        $li.find('a').click();
+        
+        /*disable previous tab*/
+        $lia.addClass('disabled');
+        $lia.find('a').removeAttr("data-toggle");
+    });
+});
+
+	$(document).ready( function() {
+    	$(document).on('change', '.btn-file :file', function() {
+		var input = $(this),
+			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+		input.trigger('fileselect', [label]);
+		});
+
+		$('.btn-file :file').on('fileselect', function(event, label) {
+		    
+		    var input = $(this).parents('.input-group').find(':text'),
+		        log = label;
+		    
+		    if( input.length ) {
+		        input.val(log);
+		    } else {
+		        if( log ) alert(log);
+		    }
+	    
+		});
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        
+		        reader.onload = function (e) {
+		            $('#img-upload').attr('src', e.target.result);
+		        }
+		        
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+
+		$("#imgInp").change(function(){
+		    readURL(this);
+		}); 	
+	});
+	
+</script>
+
+	</body>
+</html>
+

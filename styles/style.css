@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+/*Estilo Texto Geral*/
+
+.h5,
+p,
+li,
+a {
+    font-family: Nunito;
+    font-family: 50px;
+}
+
+
+/*Page: Index @JessikaFernandes*/
+
+
+/*Menu*/
+
+.nav-menu {
+    float: left;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+}
+
+.logo {
+    float: left;
+    width: 10%;
+}
+
+.login-user {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    float: right;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: #fff;
+    border: #fff;
+    color: #460fcd;
+    text-align: center;
+}
+
+.login-user:hover {
+    color: #450fcda9;
+}
+
+
+/*Painel Principal*/
+
+.jumbotron-with-background {
+    background-image: url(../img/index_main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0px;
+    height: 400px;
+}
+
+.display-title {
+    font-family: Nunito;
+    padding-top: 30%;
+    text-align: right;
+}
+
+.div-button-info-banner {
+    padding-left: 100px;
+}
+
+.btn-info-banner {
+    background-color: #460fcd;
+    border: #fff;
+    font-size: 20px;
+    border: #fff;
+    text-align: center;
+    color: #fff;
+}
+
+.btn-info {
+    background-color: #460fcd;
+    border: #fff;
+}
+
+.card {
+    background-color: #fff;
+    /* definimos o quão arredondado irá ficar nosso box */
+    border-radius: 10px;
+    box-shadow: 5px 7px 9px 1px rgb(158, 158, 158);
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+
+/* .card-box {
+    padding: 10px;
+} */
+
+.card-title {
+    font-family: Nunito;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.title-modal {
+    font-family: Nunito;
+    font-size: 30px;
+}
+
+.mb-4 {
+    font-family: Nunito;
+    font-size: 15px;
+    text-align: left;
+    padding: 5px;
+}
+
+.register {
+    padding-bottom: 50px;
+}
+
+.pet-card {
+    padding: 5px;
+    display: inline-grid;
+}
+
+.adopt-title {
+    font-family: Nunito;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer {
+    padding-top: 20px;
+    background-color: #a0cce9;
+}
+
+.container {
+    padding: 20px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload {
+    width: 50%;
+    float: center;
+}
+
+.jumbotron-with-background1 {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0px;
+}
