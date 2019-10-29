@@ -13,7 +13,21 @@ a {
     color: #535B5B;
 }
 
+
+/* body {
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+} */
+
+
 /*Page: Index @JessikaFernandes*/
+
+
 /*Menu*/
 
 .nav-menu {
@@ -88,7 +102,7 @@ a {
 
 /*Estilo card pet*/
 
-.card{
+.card {
     border: 1px solid;
     border-color: #dcdcdc;
     border-radius: 10px;
@@ -97,30 +111,30 @@ a {
 .card:hover {
     background-color: #fff;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);
-    box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);
-    transition: 0.1s; 
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(184, 175, 184, 1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(184, 175, 184, 1);
+    box-shadow: 0px 3px 5px 0px rgba(184, 175, 184, 1);
+    transition: 0.1s;
 }
 
-.card-title{
+.card-title {
     text-decoration: none;
     color: #000;
     text-align: left;
 }
 
-.card-body{
+.card-body {
     padding: 10px;
     text-decoration: none;
-    color: #535B5B; 
+    color: #535B5B;
 }
 
-.card-icon{
+.card-icon {
     border-radius: 50%;
     color: #dcdcdc;
-    border: 1px solid; 
+    border: 1px solid;
     padding: 5px;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 .card-img-top {
@@ -128,23 +142,19 @@ a {
     padding: 0;
 }
 
+
 /*Fim estilo card pet*/
 
-
-.donate-pet{
+.donate-pet {
     height: 200px;
-
 }
 
 .register {
     padding-bottom: 50px;
 }
 
+
 /*Page: Index @JessikaFernandes*/
-
-
-
-
 
 .footer {
     padding-top: 20px;
@@ -153,16 +163,12 @@ a {
 }
 
 
-
-
 /*.mb-4 {
     font-family: Nunito;
     font-size: 15px;
     text-align: left;
     padding: 5px;
 }*/
-
-
 
 .btn-file {
     position: relative;
@@ -189,3 +195,9 @@ a {
     width: 50%;
     float: center;
 }
+
+
+/*Configuração para tablets*/
+
+
+/* @media screen and (min-width: 481px) and (max-width: 1366px) {} */
