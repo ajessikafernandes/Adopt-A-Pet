@@ -52,7 +52,6 @@
                 </a>
             </li>
         </ul>
-
         <div class="tab-content">
             <div id="passo1" class="tab-pane fade in active">
                 <br>
@@ -113,16 +112,16 @@
 				      		<input name="size" id="size" value="pequeno" type="radio" required>
 				      		Pequeno
 					   		</label>
-	                            <label class="radio-inline" for="radios-1">
+                            <label class="radio-inline" for="radios-1">
 					      		<input name="size" id="size" value="medio" type="radio">
 					      		Médio
 					    	</label>
-					    	</label>
-	                            <label class="radio-inline" for="radios-2">
+                            </label>
+                            <label class="radio-inline" for="radios-2">
 					      		<input name="size" id="size" value="grande" type="radio">
 					      		Grande
 					    	</label>
-                    	</div>
+                        </div>
                     </div>
                 </div>
                 <hr>
@@ -269,7 +268,6 @@
                     <button class="btn btn-info next">Próximo &rarr;</button>
                 </div>
             </div>
-
             <div id="passo2" class="tab-pane fade">
                 <h3>Onde podemos encontrá-lo?</h3>
                 <div class="container">
@@ -299,7 +297,6 @@
                 </div>
                 <br>
             </div>
-
             <div id="passo3" class="tab-pane fade text-center">
                 <div class="container">
                     <h3>Confira os dados cadastrados</h3>
@@ -318,19 +315,11 @@
             </div>
         </div>
     </div>
-
     <br>
-
     <!-- Footer -->
     <section id="footer " class="footer ">
         <div class="container ">
             <div class="row ">
-                <div class="row ">
-                    <div class="col-xs-12 col-sm-12 col-md-12 ">
-
-                    </div>
-                    </hr>
-                </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 ">
                     <div class="row ">
                         <ul class="list-unstyled list-inline social text-center ">
@@ -346,107 +335,90 @@
                     <h5 class="text-center ">Links importantes</h5>
                     <ul class="list-unstyled quick-links text-center ">
                         <li>
-                            <a href="# "></i>Home</a>
+                            <a href="index.html"></i>Home</a>
                         </li>
                         <li>
-                            <a href=" "></i>Sobre</a>
+                            <a href="index.html"></i>Sobre</a>
                         </li>
                         <li>
-                            <a href=" "></i>Registre-se</a>
+                            <a href="register-user.html"></i>Registre-se</a>
                         </li>
                         <li>
-                            <a href=" "></i>Adote</a>
+                            <a href="adote-um-pet.html"></i>Adote</a>
                         </li>
                         <li>
-                            <a href=" "></i>Doe</a>
+                            <a href="register-user.html"></i>Doe</a>
                         </li>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white ">
                     <p class="h6 ">&copy 2019 Adopt-a-pet.com - All rights reserved to Animals.<br> Made with <span class="glyphicon glyphicon-heart"><a class="text-white ml-2 " href="https://github.com/ajessikafernandes " target="_blank "> Jéssika Fernandes </a></p>
-                    </div>
-                    </hr>
                 </div>
+                </hr>
             </div>
-        </section>
-        <!-- ./Footer -->
+        </div>
+    </section>
+    <!-- ./Footer -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*disable non active tabs*/
+                $('.nav li').not('.active').addClass('disabled');
+                $('.nav li').not('.active').find('a').removeAttr("data-toggle");
+                $('button.next').click(function(){
+                $lia = $('.nav li.active');
+                $li = $('.nav li.active').next('li'); 
+                /*enable next tab*/
+                $li.removeClass('disabled');
+                $li.find('a').attr("data-toggle","tab");
+                /*toggle tab*/
+                $li.find('a').click();
+                /*disable previous tab*/
+                $lia.addClass('disabled');
+                $lia.find('a').removeAttr("data-toggle");
+            });
+            $('button.previous').click(function(){
+                $lia = $('.nav li.active');
+                $li = $('.nav li.active').prev('li');
+                /*enable next tab*/
+                $li.removeClass('disabled');
+                $li.find('a').attr("data-toggle","tab");
+                /*toggle tab*/
+                $li.find('a').click();
+                /*disable previous tab*/
+                $lia.addClass('disabled');
+                $lia.find('a').removeAttr("data-toggle");
+            });
+            });
 
-
-
-<script type="text/javascript">
-	$(document).ready(function() {
-    /*disable non active tabs*/
-    $('.nav li').not('.active').addClass('disabled');
-    $('.nav li').not('.active').find('a').removeAttr("data-toggle");
-    
-    $('button.next').click(function(){
-        $lia = $('.nav li.active');
-        $li = $('.nav li.active').next('li');
-        
-        /*enable next tab*/
-        $li.removeClass('disabled');
-        $li.find('a').attr("data-toggle","tab");
-        /*toggle tab*/
-        $li.find('a').click();
-        
-        /*disable previous tab*/
-        $lia.addClass('disabled');
-        $lia.find('a').removeAttr("data-toggle");
-    });
-    $('button.previous').click(function(){
-        $lia = $('.nav li.active');
-        $li = $('.nav li.active').prev('li');
-        
-        /*enable next tab*/
-        $li.removeClass('disabled');
-        $li.find('a').attr("data-toggle","tab");
-        /*toggle tab*/
-        $li.find('a').click();
-        
-        /*disable previous tab*/
-        $lia.addClass('disabled');
-        $lia.find('a').removeAttr("data-toggle");
-    });
-});
-
-	$(document).ready( function() {
-    	$(document).on('change', '.btn-file :file', function() {
-		var input = $(this),
-			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-		input.trigger('fileselect', [label]);
-		});
-
-		$('.btn-file :file').on('fileselect', function(event, label) {
-		    
-		    var input = $(this).parents('.input-group').find(':text'),
-		        log = label;
-		    
-		    if( input.length ) {
-		        input.val(log);
-		    } else {
-		        if( log ) alert(log);
-		    }
-	    
-		});
-		function readURL(input) {
-		    if (input.files && input.files[0]) {
-		        var reader = new FileReader();
-		        
-		        reader.onload = function (e) {
-		            $('#img-upload').attr('src', e.target.result);
-		        }
-		        
-		        reader.readAsDataURL(input.files[0]);
-		    }
-		}
-
-		$("#imgInp").change(function(){
-		    readURL(this);
-		}); 	
-	});
-	
-</script>
-
+            $(document).ready( function() {
+                $(document).on('change', '.btn-file :file', function() {
+                    var input = $(this),
+                        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                    input.trigger('fileselect', [label]);
+                });
+                $('.btn-file :file').on('fileselect', function(event, label) {
+                    var input = $(this).parents('.input-group').find(':text'),
+                        log = label;
+                    if( input.length ) {
+                        input.val(log);
+                    } else {
+                        if( log ) alert(log);
+                    }
+                });
+                function readURL(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $('#img-upload').attr('src', e.target.result);
+                        }
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+                $("#imgInp").change(function(){
+                    readURL(this);
+                }); 	
+            });
+        </script>
 	</body>
 </html>
